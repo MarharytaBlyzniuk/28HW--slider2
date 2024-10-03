@@ -1,0 +1,111 @@
+.slider__container {
+  max-width: 960px;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.slider__container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.slider__container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.slider__container-item {
+  min-width: 100%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.slider__control-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.slider__control-item:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.slider__control-item.prev {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider__control__auto {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.slider__control__auto-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.slider__control__auto-item.active {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider__dots-item {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.slider__dots-item.active {
+  background-color: white;
+}
